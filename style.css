@@ -1,20 +1,27 @@
 body {
-        font-family: 'Courier New', Courier, monospace;
-        text-align: center;
-        background-color: #E9F5BE;
-        display: flex;
-        justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #E9F5BE;
+}
+
+.content-container{
+    margin: 20px 0px;
+    text-align: center;
+    background-color: #E9F5BE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 
 .drawing-parent-container{
     margin-top: 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 
 .drawing-space-container{
     border: 1px solid black;
-    margin-top: 20px;
     height: 600px;
     width: 600px;
     display: flex;
@@ -30,8 +37,11 @@ body {
 .each-box{
     display: block;
     background-color: white;
-    border: 1px solid black;
     caret-color: transparent;
+}
+
+.each-box-bord{
+    border: 1px solid black;
 }
 
 .footer {
@@ -64,4 +74,11 @@ button{
 
 button:hover{
     transform: scale(1.1);
+}
+
+.controls-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: flex-start;
 }

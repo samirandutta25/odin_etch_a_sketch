@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="controls-container"></div>
-    <div class="drawing-parent-container">
+    <div class="content-container">
         <div class="rows-input">
             <label for="rows">Number of rows/cloumns:</label>
-            <input type="number" id="rows" name="rows" min="10" max="25">
+            <input type="number" id="rows" name="rows" min="10" max="100">
             <button id="submitRows">Submit</button>
         </div>
-        <div class="drawing-space-container">    
+        <div class="drawing-parent-container">
+            <div class="drawing-space-container">    
+            </div>
+            <div class="controls-container">
+                <button id="resetGrid">Reset Grid</button>
+                <button id="borderToggle">Border Toggle</button>
+                <button id="overrideToggle">Override Cells Toggle</button>
+            </div>
         </div>
     </div>
     <div class="footer">
